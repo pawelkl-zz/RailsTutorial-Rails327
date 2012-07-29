@@ -1,0 +1,509 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 469,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1846,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/controllers/static_pages_controller_spec.rb",
+			"settings":
+			{
+				"buffer_size": 312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/requests/static_pages_spec.rb",
+			"settings":
+			{
+				"buffer_size": 225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/static_pages_controller.rb",
+			"settings":
+			{
+				"buffer_size": 91,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/static_pages/home.html.erb",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pawel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+			"settings":
+			{
+				"buffer_size": 31027,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/static_pages/help.html.erb",
+			"settings":
+			{
+				"buffer_size": 81,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 180.0,
+		"selected_items":
+		[
+			[
+				"prefere",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"preferences",
+				"Preferences: Settings - Default"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/pawel/.config/sublime-text-2/Packages/User/",
+		"/home/pawel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/pawel/sample_app/Gemfile",
+		"/home/pawel/.config/sublime-text-2/Packages/",
+		"/usr/bin/gnome-session-xmonad",
+		"/home/pawel/tab4terminal.sh",
+		"/home/pawel/.config/terminator/config",
+		"/home/pawel/.xmonad/xmonad.hs",
+		"/home/pawel/.bashrc",
+		"/home/pawel/sample_app/.rvmrc",
+		"/home/pawel/.gemrc",
+		"/home/pawel/.gemr",
+		"/usr/share/gnome-session/sessions/xmonad.session",
+		"/home/pawel/trails.sh",
+		"/etc/X11/xorg.conf",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme",
+		"/home/pawel/.config/sublime-text-2/Packages/-",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme - Default/Widget.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/Default/Widget.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme - Default/Widgets.stTheme",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme - Default/Widget",
+		"/home/pawel/.config/sublime-text-2/Packages/RubyTest/RubyTest.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"select",
+			"match",
+			"word",
+			"tab",
+			"width",
+			"color_scheme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/controllers/static_pages_controller_spec.rb",
+					"settings":
+					{
+						"buffer_size": 312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								300
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/requests/static_pages_spec.rb",
+					"settings":
+					{
+						"buffer_size": 225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "app/controllers/static_pages_controller.rb",
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/static_pages/home.html.erb",
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/pawel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 31027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9231,
+								9231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4086.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/static_pages/help.html.erb",
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"staticpagesspec",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"staticspc",
+				"spec/controllers/static_pages_controller_spec.rb"
+			],
+			[
+				"help",
+				"app/views/static_pages/help.html.erb"
+			],
+			[
+				"home",
+				"app/views/static_pages/home.html.erb"
+			],
+			[
+				"pages",
+				"app/controllers/static_pages_controller.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
