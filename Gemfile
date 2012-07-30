@@ -26,6 +26,12 @@ group :test do
   # gem 'autotest-standalone'
   # gem 'autotest-rails'
   # gem 'autotest-notification'
+
+  # gem 'rb-inotify', '0.8.8'
+  # gem 'libnotify', '0.5.9'
+
+  # gem 'database_cleaner'
+  # gem "email_spec"
 end
 
 group :guard do
