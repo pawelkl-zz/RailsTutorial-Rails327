@@ -1,10 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
-gem 'heroku'
+gem 'heroku', '~> 2.30.1'
+gem 'bootstrap-sass', '2.0.0'
+gem 'jquery-rails', '2.0.0'
+# gem 'pry', '~> 0.9.10'
+# gem 'pry-rails', '~> 0.1.6'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
+  gem 'sqlite3', '1.3.6'
 end
 
 # Gems used only for assets and not required
@@ -15,13 +19,13 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '2.0.0'
-
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'spork'
-  gem 'rspec'
-  gem 'rspec-rails', '2.10.0'
+  gem "launchy", "~> 2.1.1"
+  # gem 'capybara-webkit'
+  gem 'spork', '~> 0.9.2'
+  gem 'rspec', '~> 2.11.0' #2.10.0
+  gem 'rspec-rails', '2.11.0' #2.10.0
   # gem 'cucumber-rails'
   # gem 'autotest-standalone'
   # gem 'autotest-rails'
@@ -35,15 +39,21 @@ group :test do
 end
 
 group :guard do
-  gem 'guard'
-  gem 'guard-rails'
-  gem 'guard-spork'
-  gem 'guard-rspec'
-  gem 'guard-cucumber'
-  gem 'guard-rails-assets'
-  gem 'guard-jasmine-headless-webkit'
+  gem 'guard', '~> 1.1.0'
+  gem 'guard-rails', '~> 0.1.0'
+  gem 'guard-spork', '~> 1.1.0'
+  gem 'guard-sass', '~> 0.7.1'
+  # gem 'guard-webrick'
+  gem 'guard-rspec', '~> 1.2.0'
+  # gem 'guard-cucumber'
+  gem 'guard-rails-assets', '~> 0.1.3'
+  # gem 'guard-jasmine-headless-webkit', '~> 0.3.2'
+  gem 'guard-migrate', '~> 0.1.4'
+  gem 'guard-bundler', '~> 1.0.0'
+  gem 'guard-livereload', '~> 1.0.0'
 end
 
 group :production do
   gem 'pg', '0.12.2'
+  # gem 'pg', '~> 0.14.0'
 end

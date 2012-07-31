@@ -3,71 +3,85 @@
 	{
 		"selected_items":
 		[
+			[
+				"font",
+				"font_face"
+			],
+			[
+				"have",
+				"have_content"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 469,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 1846,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/controllers/static_pages_controller_spec.rb",
-			"settings":
-			{
-				"buffer_size": 312,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "spec/requests/static_pages_spec.rb",
 			"settings":
 			{
-				"buffer_size": 225,
+				"buffer_size": 1204,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/static_pages_controller.rb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 91,
+				"buffer_size": 1351,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "spec/support/utilities.rb",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/application_helper.rb",
+			"settings":
+			{
+				"buffer_size": 238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<% provide(:title, 'Home') %>\n<div class=\"center hero-unit\">\n  <h1>Sample App</h1>\n\n  <h2>\n    This is the home page for the\n    <a href=\"http://railstutorial.org/\">Ruby on Rails Tutorial</a>\n    sample application.\n  </h2>\n\n  <%= link_to \"Sign up now!\", '#', class: \"btn btn-large btn-primary\" %>\n</div>\n\n<%= link_to image_tag(\"rails.png\", alt: \"Rails\"), 'http://rubyonrails.org/' %>",
 			"file": "app/views/static_pages/home.html.erb",
+			"file_size": 384,
+			"file_write_time": 1343655107000000,
 			"settings":
 			{
-				"buffer_size": 474,
+				"buffer_size": 384,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/pawel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+			"file": "/home/pawel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 31027,
+				"buffer_size": 492,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/static_pages/help.html.erb",
+			"contents": "# ~/.bashrc: executed by bash(1) for non-login shells.\n# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)\n# for examples\n\n# If not running interactively, don't do anything\n[ -z \"$PS1\" ] && returnl\n\n# don't put duplicate lines or lines starting with space in the history.\n# See bash(1) for more options\nHISTCONTROL=ignoreboth\n\n# append to the history file, don't overwrite it\nshopt -s histappend\n\n# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)\nHISTSIZE=1000\nHISTFILESIZE=2000\n\n# check the window size after each command and, if necessary,\n# update the values of LINES and COLUMNS.\nshopt -s checkwinsize\n\n# If set, the pattern \"**\" used in a pathname expansion context will\n# match all files and zero or more directories and subdirectories.\n#shopt -s globstar\n\n# make less more friendly for non-text input files, see lesspipe(1)\n[ -x /usr/bin/lesspipe ] && eval \"$(SHELL=/bin/sh lesspipe)\"\n\n# set variable identifying the chroot you work in (used in the prompt below)\nif [ -z \"$debian_chroot\" ] && [ -r /etc/debian_chroot ]; then\n    debian_chroot=$(cat /etc/debian_chroot)\nfi\n\n# set a fancy prompt (non-color, unless we know we \"want\" color)\ncase \"$TERM\" in\n    xterm-color) color_prompt=yes;;\nesac\n\n# uncomment for a colored prompt, if the terminal has the capability; turned\n# off by default to not distract the user: the focus in a terminal window\n# should be on the output of commands, not on the prompt\n#force_color_prompt=yes\n\nif [ -n \"$force_color_prompt\" ]; then\n    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then\n	# We have color support; assume it's compliant with Ecma-48\n	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such\n	# a case would tend to support setf rather than setaf.)\n	color_prompt=yes\n    else\n	color_prompt=\n    fi\nfi\n\nif [ \"$color_prompt\" = yes ]; then\n    PS1='${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ '\nelse\n    PS1='${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$ '\nfi\nunset color_prompt force_color_prompt\n\n# If this is an xterm set the title to user@host:dir\ncase \"$TERM\" in\nxterm*|rxvt*)\n    PS1=\"\\[\\e]0;${debian_chroot:+($debian_chroot)}\\u@\\h: \\w\\a\\]$PS1\"\n    ;;\n*)\n    ;;\nesac\n\n# enable color support of ls and also add handy aliases\nif [ -x /usr/bin/dircolors ]; then\n    test -r ~/.dircolors && eval \"$(dircolors -b ~/.dircolors)\" || eval \"$(dircolors -b)\"\n    alias ls='ls --color=auto'\n    #alias dir='dir --color=auto'\n    #alias vdir='vdir --color=auto'\n\n    alias grep='grep --color=auto'\n    alias fgrep='fgrep --color=auto'\n    alias egrep='egrep --color=auto'\nfi\n\n# some more ls aliases\nalias ll='ls -alF'\nalias la='ls -A'\nalias l='ls -CF'\n\n# Add an \"alert\" alias for long running commands.  Use like so:\n#   sleep 10; alert\nalias alert='notify-send --urgency=low -i \"$([ $? = 0 ] && echo terminal || echo error)\" \"$(history|tail -n1|sed -e '\\''s/^\\s*[0-9]\\+\\s*//;s/[;&|]\\s*alert$//'\\'')\"'\n\n# Alias definitions.\n# You may want to put all your additions into a separate file like\n# ~/.bash_aliases, instead of adding them here directly.\n# See /usr/share/doc/bash-doc/examples in the bash-doc package.\n\nif [ -f ~/.bash_aliases ]; then\n    . ~/.bash_aliases\nfi\n\n# enable programmable completion features (you don't need to enable\n# this, if it's already enabled in /etc/bash.bashrc and /etc/profile\n# sources /etc/bash.bashrc).\nif [ -f /etc/bash_completion ] && ! shopt -oq posix; then\n    . /etc/bash_completion\nfi\n\nPATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting\n# PATH=${PATH}:/var/lib/gems/1.9.2/bin/\n\n# alias terminator = terminator --layout=rails\n\n [[ -s \"/home/pawel/.rvm/scripts/rvm\" ]] && source \"/home/pawel/.rvm/scripts/rvm\"\n",
+			"file": "/home/pawel/.bashrc",
+			"file_size": 3716,
+			"file_write_time": 1343670039000000,
 			"settings":
 			{
-				"buffer_size": 81,
+				"buffer_size": 3717,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/pawel/.bash_aliases",
+			"settings":
+			{
+				"buffer_size": 3027,
 				"line_ending": "Unix"
 			}
 		}
@@ -75,39 +89,91 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 180.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
-				"prefere",
-				"Preferences: Key Bindings - Default"
+				"preferences",
+				"Preferences: Settings - Default"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
+				"preferen",
+				"Preferences: Settings - User"
 			],
 			[
 				"instal",
 				"Package Control: Install Package"
 			],
 			[
-				"user",
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prefere",
 				"Preferences: Settings - User"
 			],
 			[
-				"preferences",
-				"Preferences: Settings - Default"
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"preference",
+				"Preferences: Settings - User"
+			],
+			[
+				"convert t",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"preferenc",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"traili",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trali",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"traling",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
 			],
 			[
 				"indent",
 				"Indentation: Convert to Spaces"
 			]
 		],
-		"width": 503.0
+		"width": 430.0
 	},
 	"console":
 	{
@@ -124,16 +190,70 @@
 	},
 	"file_history":
 	[
-		"/home/pawel/.config/sublime-text-2/Packages/User/",
-		"/home/pawel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/pawel/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/pawel/sample_app/sample_app.sublime-project",
+		"/home/pawel/.bash_profile",
+		"/home/pawel/.bash",
+		"/home/pawel/sample_app/.codeintel/config",
+		"/home/pawel/.config/sublime-text-2/Packages/SublimeCodeIntel/Default (Linux).sublime-keymap",
+		"/home/pawel/.config/sublime-text-2/Packages/SublimeCodeIntel/Default (Linux).sublime-mousemap",
+		"/home/pawel/.config/sublime-text-2/Packages/SublimeCodeIntel/Main.sublime-menu",
+		"/home/pawel/.config/sublime-text-2/Packages/SublimeCodeIntel/Default.sublime-commands",
+		"/home/pawel/.config/sublime-text-2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/User/Railscasts.tmTheme",
+		"/home/pawel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/User/TestConsole.tmTheme",
+		"/home/pawel/.config/sublime-text-2/Packages/User/TestConsole.tmLanguage",
+		"/home/pawel/sample_app/app/views/layouts/_footer.html.erb",
+		"/home/pawel/sample_app/app/views/layouts/_header.html.erb",
+		"/home/pawel/.config/sublime-text-2/Packages/User/CustomTestConsole.tmTheme",
+		"/home/pawel/sample_app/app/views/layouts/application.html.erb",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme - Soda/Soda Dark.sublime-theme",
+		"/home/pawel/.bash_aliases",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme - Soda/Soda Dark/Widget - Soda Dark.stTheme",
+		"/home/pawel/.config/sublime-text-2/Packages/RubyTest/Widget.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/Theme - Soda/Soda Dark/Widget - Soda Dark.sublime-settings",
+		"/home/pawel/.config/sublime-text-2/Packages/RubyTest/TestConsole.tmTheme",
+		"/home/pawel/sample_app/Gemfile.lock",
+		"/home/pawel/sample_app/Rakefile",
 		"/home/pawel/sample_app/Gemfile",
+		"/home/pawel/sample_app/.pryrc",
+		"/home/pawel/sample_app/.bundle/config",
+		"/home/pawel/sample_app/.rspec",
+		"/home/pawel/.config/sublime-text-2/Packages/User/RubyTest.last-run",
+		"/home/pawel/.bashrc",
+		"/usr/share/unity-2d/shell/launcher/Launcher.qml",
+		"/home/pawel/sample_app/spec/spec_helper.rb",
+		"/home/pawel/sample_app/config/application.rb",
+		"/home/pawel/sample_app/app/helpers/application_helper.rb",
+		"/home/pawel/sample_app/spec/support/utilities.rb",
+		"/home/pawel/sample_app/app/helpers/integration_test_helper.rb",
+		"/home/pawel/sample_app/spec/views/static_pages/help.html.erb_spec.rb",
+		"/home/pawel/sample_app/spec/views/static_pages/home.html.erb_spec.rb",
+		"/home/pawel/sample_app/spec/helpers/static_pages_helper_spec.rb",
+		"/home/pawel/sample_app/spec/controllers/static_pages_controller_spec.rb",
+		"/home/pawel/sample_app/app/views/static_pages/home.html.erb",
+		"/home/pawel/capybara.rb",
+		"/home/pawel/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/home/pawel/sample_app/app/views/static_pages/about.html.erb",
+		"/home/pawel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/pawel/sample_app/config/routes.rb",
+		"/home/pawel/sample_app/Guardfile",
+		"/home/pawel/sample_app/app/controllers/static_pages_controller.rb",
+		"/home/pawel/sample_app/app/views/static_pages/contact.html.erb",
+		"/home/pawel/sample_app/app/views/static_pages/help.html.erb",
+		"/home/pawel/sample_app/app/views/layouts/_nav.html.erb",
+		"/home/pawel/.config/sublime-text-2/Packages/Ruby 1.9 Hash Converter/Default (Linux).sublime-keymap",
+		"/home/pawel/sample_app/spec/requests/static_pages_spec.rb",
+		"/home/pawel/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/pawel/sample_app/.gitignore",
+		"/home/pawel/sample_app/about.html.erb",
+		"/home/pawel/.config/sublime-text-2/Packages/User/",
 		"/home/pawel/.config/sublime-text-2/Packages/",
 		"/usr/bin/gnome-session-xmonad",
 		"/home/pawel/tab4terminal.sh",
 		"/home/pawel/.config/terminator/config",
 		"/home/pawel/.xmonad/xmonad.hs",
-		"/home/pawel/.bashrc",
 		"/home/pawel/sample_app/.rvmrc",
 		"/home/pawel/.gemrc",
 		"/home/pawel/.gemr",
@@ -164,6 +284,53 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"require",
+			"describe",
+			"\"Home page\"",
+			"page",
+			"root_path",
+			"have_selector",
+			"has_link",
+			"files",
+			"font_face",
+			"font",
+			"size",
+			"high",
+			"setting",
+			"console",
+			"backgroun",
+			"{s",
+			"visit help_path",
+			"page.",
+			"page",
+			"should",
+			"page",
+			"home_path",
+			"pages",
+			"pages/",
+			"/",
+			"replace",
+			"/\n/",
+			"/",
+			"'/static_pages/contact'",
+			"'/static_pages/about'",
+			"'/static_pages/help'",
+			"replace",
+			"'/static_pages/home'",
+			"static_pages",
+			"home",
+			"sfd",
+			"sdfdfssdfdfssdfdfs",
+			"sass",
+			"indent",
+			"asset",
+			"rspec",
+			"base_title",
+			"SampleApp",
+			"static_pages",
+			"expand",
+			"window",
+			"save",
 			"select",
 			"match",
 			"word",
@@ -177,6 +344,14 @@
 		"regex": false,
 		"replace_history":
 		[
+			"{ s",
+			"root_path",
+			"root",
+			"pages#",
+			"contact_path",
+			"about_path",
+			"help_path",
+			"home_path",
 			""
 		],
 		"reverse": false,
@@ -188,28 +363,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "spec/requests/static_pages_spec.rb",
 					"settings":
 					{
-						"buffer_size": 469,
+						"buffer_size": 1204,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								257,
-								257
+								372,
+								372
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+							"syntax": "Packages/User/RSpec.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -219,18 +396,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "config/routes.rb",
+					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 1846,
+						"buffer_size": 1351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40,
-								40
+								379,
+								379
 							]
 						],
 						"settings":
@@ -247,78 +424,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "spec/controllers/static_pages_controller_spec.rb",
+					"file": "spec/support/utilities.rb",
 					"settings":
 					{
-						"buffer_size": 312,
+						"buffer_size": 26,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								300,
-								300
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/RSpec.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "spec/requests/static_pages_spec.rb",
-					"settings":
-					{
-						"buffer_size": 225,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								225,
-								225
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/User/RSpec.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "app/controllers/static_pages_controller.rb",
-					"settings":
-					{
-						"buffer_size": 91,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								91,
-								91
+								26,
+								26
 							]
 						],
 						"settings":
@@ -332,19 +449,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/views/static_pages/home.html.erb",
+					"buffer": 3,
+					"file": "app/helpers/application_helper.rb",
 					"settings":
 					{
-						"buffer_size": 474,
+						"buffer_size": 238,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								469,
-								469
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "app/views/static_pages/home.html.erb",
+					"settings":
+					{
+						"buffer_size": 384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								384,
+								384
 							]
 						],
 						"settings":
@@ -358,19 +507,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/home/pawel/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+					"buffer": 5,
+					"file": "/home/pawel/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 31027,
+						"buffer_size": 492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9231,
-								9231
+								492,
+								492
 							]
 						],
 						"settings":
@@ -379,30 +528,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4086.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/views/static_pages/help.html.erb",
+					"buffer": 6,
+					"file": "/home/pawel/.bashrc",
 					"settings":
 					{
-						"buffer_size": 81,
+						"buffer_size": 3717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								76,
-								76
+								294,
+								294
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/pawel/.bash_aliases",
+					"settings":
+					{
+						"buffer_size": 3027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -451,6 +630,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.tests":
+	{
+		"height": 177.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -462,6 +649,178 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"app/views/static_pages/home.html.erb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"pryr",
+				".pryrc"
+			],
+			[
+				".pry",
+				".pryrc"
+			],
+			[
+				"helper",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"spec_",
+				"spec/spec_helper.rb"
+			],
+			[
+				"appli.",
+				"config/application.rb"
+			],
+			[
+				"apphelpapp",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"specsupputi",
+				"spec/support/utilities.rb"
+			],
+			[
+				"specsu",
+				"spec/support/utilities.rb"
+			],
+			[
+				"specsuppo",
+				"spec/support/utilities.rb"
+			],
+			[
+				"htmler",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"footer",
+				"app/views/layouts/_footer.html.erb"
+			],
+			[
+				"hmlspec",
+				"spec/views/static_pages/home.html.erb_spec.rb"
+			],
+			[
+				"pagesspec",
+				"spec/views/static_pages/help.html.erb_spec.rb"
+			],
+			[
+				"header",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"apperb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"abouter",
+				"app/views/static_pages/about.html.erb"
+			],
+			[
+				"conta",
+				"app/views/static_pages/contact.html.erb"
+			],
+			[
+				"about",
+				"app/views/static_pages/about.html.erb"
+			],
+			[
+				"guard",
+				"Guardfile"
+			],
+			[
+				"guar",
+				"Guardfile"
+			],
+			[
+				"abou",
+				"app/views/static_pages/about.html.erb"
+			],
+			[
+				"help",
+				"app/views/static_pages/help.html.erb"
+			],
+			[
+				"speche",
+				"spec/spec_helper.rb"
+			],
+			[
+				"he",
+				"app/views/static_pages/help.html.erb"
+			],
+			[
+				"homeer",
+				"app/views/static_pages/home.html.erb"
+			],
+			[
+				"nav",
+				"app/views/layouts/_nav.html.erb"
+			],
+			[
+				"applicationhtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"spec.rb",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"apprb",
+				"config/application.rb"
+			],
+			[
+				"config/app",
+				"config/application.rb"
+			],
+			[
+				"aphe",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"applicationhel",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"staticpages",
+				"spec/requests/static_pages_spec.rb"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"applica",
+				"config/application.rb"
+			],
+			[
+				".rspe",
+				".rspec"
+			],
+			[
 				"staticpagesspec",
 				"spec/requests/static_pages_spec.rb"
 			],
@@ -470,40 +829,28 @@
 				"spec/controllers/static_pages_controller_spec.rb"
 			],
 			[
-				"help",
-				"app/views/static_pages/help.html.erb"
-			],
-			[
-				"home",
-				"app/views/static_pages/home.html.erb"
-			],
-			[
 				"pages",
 				"app/controllers/static_pages_controller.rb"
 			],
 			[
 				"routes",
 				"config/routes.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": false,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 150.0,
+	"side_bar_visible": true,
+	"side_bar_width": 143.0,
 	"status_bar_visible": true
 }
