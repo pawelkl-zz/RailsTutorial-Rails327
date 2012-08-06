@@ -64,3 +64,11 @@ SampleApp::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+#== Route Map
+# Generated on 06 Aug 2012 19:56
+#
+#      root     /                    static_pages#home
+#      help     /help(.:format)      static_pages#help
+#     about     /about(.:format)     static_pages#about
+#   contact     /contact(.:format)   static_pages#contact
+#    signup     /signup(.:format)    users#new
