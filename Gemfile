@@ -4,12 +4,18 @@ gem 'rails', '3.2.7'
 gem 'heroku', '~> 2.30.1'
 gem 'bootstrap-sass', '2.0.0'
 gem 'jquery-rails', '2.0.0'
-# gem 'pry', '~> 0.9.10'
-# gem 'pry-rails', '~> 0.1.6'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.6'
+  gem 'sqlite3', '1.3.5' # 1.3.6
+  # gem 'annotate', '2.5.0'
+  gem 'rspec-rails', '2.11.0' #2.10.0
+  gem 'pry', '~> 0.9.10'
+  gem 'pry-rails', '~> 0.1.6'
+  gem 'pry-doc'
+  # gem 'doc'
+  gem 'annotate', '2.5.0'
 end
+
 
 # Gems used only for assets and not required
 # in production environments by default.

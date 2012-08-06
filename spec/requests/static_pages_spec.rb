@@ -20,7 +20,7 @@ describe "StaticPages" do
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
-    # it { should_not have_selector 'head title', text: '| Home' }
+    # it { should_not have_selector 'title', text: '| Home' }
   end
 
   describe "Help page" do
