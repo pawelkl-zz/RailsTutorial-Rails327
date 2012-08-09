@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+
   get "users/new"
 
   root to: "static_pages#home"
@@ -65,7 +66,7 @@ SampleApp::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 end
 #== Route Map
-# Generated on 06 Aug 2012 19:56
+# Generated on 07 Aug 2012 14:43
 #
 #      root     /                    static_pages#home
 #      help     /help(.:format)      static_pages#help

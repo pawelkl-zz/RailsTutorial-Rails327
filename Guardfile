@@ -33,7 +33,7 @@ guard 'rails-assets' do
   watch('config/application.rb')
 end
 
-guard 'rspec', :version => 2 do
+guard 'rspec', version: 2 do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
@@ -55,9 +55,9 @@ guard 'rspec', :version => 2 do
 end
 
 
-guard 'sass', :input => 'sass', :output => 'css'
+guard 'sass', input: 'sass', output: 'css'
 
-guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAILS_ENV' => 'test' } do
+guard 'spork', cucumber_env: { 'RAILS_ENV' => 'test' }, rspec_env: { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
@@ -69,7 +69,7 @@ guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAIL
   watch(%r{features/support/}) { :cucumber }
 end
 
-guard 'annotate', :routes => true, :tests => true, :show_indexes => true do
+guard 'annotate', routes: true, tests: true, show_indexes: true, position: 'before' do
   watch( 'db/schema.rb' )
   # Uncomment the following line if you also want to run annotate anytime
   # a model file changes

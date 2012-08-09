@@ -4,25 +4,27 @@ gem 'rails', '3.2.7'
 gem 'heroku', '~> 2.30.1'
 gem 'bootstrap-sass', '2.0.0'
 gem 'jquery-rails', '2.0.0'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development do
   gem 'sqlite3', '1.3.5' # 1.3.6
   gem 'rspec-rails', '2.11.0' #2.10.0
-  gem 'pry', '~> 0.9.10'
+  # gem 'pry', '~> 0.9.10'
   gem 'pry-rails', '~> 0.1.6'
-  gem 'pry-doc'
-  # gem 'doc'
+  gem 'pry-debundle', '~> 0.3'
+  # gem 'pry-doc'
+  gem 'doc', '~> 0.4.0'
   gem 'annotate', '2.5.0' # => development
 end
 
 group :test do
   gem 'sqlite3', '1.3.5' # 1.3.6 # WTR??!!
   gem 'rspec-rails', '2.11.0' #2.10.0
+  gem 'spork', '~> 0.9.2'
+  # gem 'rspec', '~> 2.11.0' #2.10.0
   gem 'capybara', '1.1.2'
   gem "launchy", "~> 2.1.1"
   # gem 'capybara-webkit'
-  gem 'spork', '~> 0.9.2'
-  gem 'rspec', '~> 2.11.0' #2.10.0
   # gem 'cucumber-rails'
   # gem 'autotest-standalone'
   # gem 'autotest-rails'
@@ -37,7 +39,7 @@ group :guard do
   gem 'guard', '~> 1.1.0'
   gem 'guard-rails', '~> 0.1.0'
   gem 'guard-spork', '~> 1.1.0'
-  gem 'guard-annotate', '~> 1.0.0'
+  # gem 'guard-annotate', '~> 1.0.0'
   gem 'guard-sass', '~> 0.7.1'
   # gem 'guard-webrick'
   gem 'guard-rspec', '~> 1.2.0'
@@ -47,6 +49,7 @@ group :guard do
   gem 'guard-migrate', '~> 0.1.4'
   gem 'guard-bundler', '~> 1.0.0'
   gem 'guard-livereload', '~> 1.0.0'
+  gem 'guard-ctags-bundler'
 end
 
 group :production do
@@ -54,8 +57,6 @@ group :production do
   # gem 'pg', '~> 0.14.0'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '3.2.4'
   gem 'coffee-rails', '3.2.2'
