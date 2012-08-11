@@ -20,7 +20,7 @@ guard 'migrate' do
   watch(%r{^db/migrate/(\d+).+\.rb})
 end
 
-guard 'rails' do
+guard 'rails', environment: 'development' do
   watch('Gemfile.lock')
   watch(%r{^(config|lib)/.*})
 end
