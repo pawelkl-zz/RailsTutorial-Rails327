@@ -42,9 +42,11 @@ describe "User pages" do
         expect { click_button submit }.to change(User, :count).by(1)
       end
 
-      it "set a flash message" do
-         expect { click_button submit }.to have_selector('div', text:'LOL')
-         #flash[:success].be
+      it "display a Welcome message" do
+         # expect { click_button submit }.to have_selector('div', text:'Welcome to the SampleApp!')
+         click_button submit
+         # flash[:success].should =~ /Welcome to the SampleApp!/i
+         page.should have_selector('div', text:'Welcome to the SampleApp!')
       end
     end
   end
