@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
-gem 'heroku', '~> 2.30.1'
+gem 'heroku', '~> 2.30.2'
 gem 'bootstrap-sass', '2.0.0'
 gem 'jquery-rails', '~> 2.0.2' #, '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
