@@ -5,6 +5,7 @@ gem 'heroku', '~> 2.30.1'
 gem 'bootstrap-sass', '2.0.0'
 gem 'jquery-rails', '~> 2.0.2' #, '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
+# gem 'thin', '~>1.4.1'
 
 group :development do
   gem 'sqlite3', '1.3.5' # 1.3.6
