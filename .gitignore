@@ -23,4 +23,4 @@ doc/
 bundler_stubs/
 
 # ignore compiled assets
-*.gz
+# public//assets/*.gz

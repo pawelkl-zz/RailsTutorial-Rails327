@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.7'
 gem 'heroku', '~> 2.30.1'
 gem 'bootstrap-sass', '2.0.0'
-gem 'jquery-rails', '2.0.0'
+gem 'jquery-rails', '~> 2.0.2' #, '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
 
 group :development do
@@ -23,7 +23,9 @@ group :test do
   gem 'spork', '~> 0.9.2'
   # gem 'rspec', '~> 2.11.0' #2.10.0
   gem 'capybara', '1.1.2'
-  gem "launchy", "~> 2.1.1"
+  gem 'launchy', '~> 2.1.1'
+  # gem 'factory_girl', '~> 4.0.0' #'1.4.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
   # gem 'capybara-webkit'
   # gem 'cucumber-rails'
   # gem 'autotest-standalone'
@@ -32,7 +34,7 @@ group :test do
     # gem 'rb-inotify', '0.8.8'
     # gem 'libnotify', '0.5.9'
   # gem 'database_cleaner'
-  # gem "email_spec"
+  # gem 'email_spec'
 end
 
 group :guard do

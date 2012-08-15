@@ -984,69 +984,69 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 
 /* line 233, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.warning > label, .control-group.warning .help-block, .control-group.warning .help-inline {
+.control-group.warning > label, .warning.field_with_errors > label, .control-group.warning .help-block, .warning.field_with_errors .help-block, .control-group.warning .help-inline, .warning.field_with_errors .help-inline {
   color: #c09853;
 }
 /* line 237, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.warning input, .control-group.warning select, .control-group.warning textarea {
+.control-group.warning input, .warning.field_with_errors input, .control-group.warning select, .warning.field_with_errors select, .control-group.warning textarea, .warning.field_with_errors textarea {
   color: #c09853;
   border-color: #c09853;
 }
 /* line 240, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.warning input:focus, .control-group.warning select:focus, .control-group.warning textarea:focus {
+.control-group.warning input:focus, .warning.field_with_errors input:focus, .control-group.warning select:focus, .warning.field_with_errors select:focus, .control-group.warning textarea:focus, .warning.field_with_errors textarea:focus {
   border-color: #a47e3c;
   -webkit-box-shadow: 0 0 6px #dbc59e;
   -moz-box-shadow: 0 0 6px #dbc59e;
   box-shadow: 0 0 6px #dbc59e;
 }
 /* line 246, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.warning .input-prepend .add-on, .control-group.warning .input-append .add-on {
+.control-group.warning .input-prepend .add-on, .warning.field_with_errors .input-prepend .add-on, .control-group.warning .input-append .add-on, .warning.field_with_errors .input-append .add-on {
   color: #c09853;
   background-color: #fcf8e3;
   border-color: #c09853;
 }
 
 /* line 233, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
+.control-group.error > label, .field_with_errors > label, .control-group.error .help-block, .field_with_errors .help-block, .control-group.error .help-inline, .field_with_errors .help-inline {
   color: #b94a48;
 }
 /* line 237, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.error input, .control-group.error select, .control-group.error textarea {
+.control-group.error input, .field_with_errors input, .control-group.error select, .field_with_errors select, .control-group.error textarea, .field_with_errors textarea {
   color: #b94a48;
   border-color: #b94a48;
 }
 /* line 240, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
+.control-group.error input:focus, .field_with_errors input:focus, .control-group.error select:focus, .field_with_errors select:focus, .control-group.error textarea:focus, .field_with_errors textarea:focus {
   border-color: #953b39;
   -webkit-box-shadow: 0 0 6px #d59392;
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
 }
 /* line 246, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on {
+.control-group.error .input-prepend .add-on, .field_with_errors .input-prepend .add-on, .control-group.error .input-append .add-on, .field_with_errors .input-append .add-on {
   color: #b94a48;
   background-color: #f2dede;
   border-color: #b94a48;
 }
 
 /* line 233, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.success > label, .control-group.success .help-block, .control-group.success .help-inline {
+.control-group.success > label, .success.field_with_errors > label, .control-group.success .help-block, .success.field_with_errors .help-block, .control-group.success .help-inline, .success.field_with_errors .help-inline {
   color: #468847;
 }
 /* line 237, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.success input, .control-group.success select, .control-group.success textarea {
+.control-group.success input, .success.field_with_errors input, .control-group.success select, .success.field_with_errors select, .control-group.success textarea, .success.field_with_errors textarea {
   color: #468847;
   border-color: #468847;
 }
 /* line 240, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
+.control-group.success input:focus, .success.field_with_errors input:focus, .control-group.success select:focus, .success.field_with_errors select:focus, .control-group.success textarea:focus, .success.field_with_errors textarea:focus {
   border-color: #356635;
   -webkit-box-shadow: 0 0 6px #7aba7b;
   -moz-box-shadow: 0 0 6px #7aba7b;
   box-shadow: 0 0 6px #7aba7b;
 }
 /* line 246, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on {
+.control-group.success .input-prepend .add-on, .success.field_with_errors .input-prepend .add-on, .control-group.success .input-append .add-on, .success.field_with_errors .input-append .add-on {
   color: #468847;
   background-color: #dff0d8;
   border-color: #468847;
@@ -1229,31 +1229,31 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 }
 
 /* line 425, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.control-group {
+.control-group, .field_with_errors {
   margin-bottom: 9px;
 }
 
 /* line 434, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal legend + .control-group {
+.form-horizontal legend + .control-group, .form-horizontal legend + .field_with_errors {
   margin-top: 18px;
   -webkit-margin-top-collapse: separate;
 }
 /* line 439, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .control-group {
+.form-horizontal .control-group, .form-horizontal .field_with_errors {
   margin-bottom: 18px;
   *zoom: 1;
 }
 /* line 15, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.form-horizontal .control-group:before, .form-horizontal .control-group:after {
+.form-horizontal .control-group:before, .form-horizontal .field_with_errors:before, .form-horizontal .control-group:after, .form-horizontal .field_with_errors:after {
   display: table;
   content: "";
 }
 /* line 19, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.form-horizontal .control-group:after {
+.form-horizontal .control-group:after, .form-horizontal .field_with_errors:after {
   clear: both;
 }
 /* line 444, ../../../.rvm/gems/ruby-1.9.3-p194@rails3/gems/bootstrap-sass-2.0.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .control-group > label {
+.form-horizontal .control-group > label, .form-horizontal .field_with_errors > label {
   float: left;
   width: 140px;
   padding-top: 5px;
@@ -4485,39 +4485,93 @@ p {
   text-decoration: none;
 }
 
+/* sidebar */
+/* line 87, ../../app/assets/stylesheets/custom.css.scss */
+aside section {
+  padding: 10px 0;
+  border-top: 1px solid #eeeeee;
+}
+/* line 90, ../../app/assets/stylesheets/custom.css.scss */
+aside section:first-child {
+  border: 0;
+  padding-top: 0;
+}
+/* line 94, ../../app/assets/stylesheets/custom.css.scss */
+aside section span {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1;
+}
+/* line 99, ../../app/assets/stylesheets/custom.css.scss */
+aside section h1 {
+  font-size: 1.6em;
+  text-align: left;
+  letter-spacing: -1px;
+  margin-bottom: 3px;
+}
+
+/* line 108, ../../app/assets/stylesheets/custom.css.scss */
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+/* forms */
+/* line 115, ../../app/assets/stylesheets/custom.css.scss */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* footer */
-/* line 86, ../../app/assets/stylesheets/custom.css.scss */
+/* line 126, ../../app/assets/stylesheets/custom.css.scss */
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999999;
 }
-/* line 91, ../../app/assets/stylesheets/custom.css.scss */
+/* line 131, ../../app/assets/stylesheets/custom.css.scss */
 footer a {
   color: #555555;
 }
-/* line 93, ../../app/assets/stylesheets/custom.css.scss */
+/* line 133, ../../app/assets/stylesheets/custom.css.scss */
 footer a:hover {
   color: #222222;
 }
-/* line 97, ../../app/assets/stylesheets/custom.css.scss */
+/* line 137, ../../app/assets/stylesheets/custom.css.scss */
 footer small {
   float: left;
 }
-/* line 100, ../../app/assets/stylesheets/custom.css.scss */
+/* line 140, ../../app/assets/stylesheets/custom.css.scss */
 footer ul {
   float: right;
   list-style: none;
 }
-/* line 103, ../../app/assets/stylesheets/custom.css.scss */
+/* line 143, ../../app/assets/stylesheets/custom.css.scss */
 footer ul li {
   float: left;
   margin-left: 10px;
 }
 
+/* line 150, ../../app/assets/stylesheets/custom.css.scss */
+#error_explanation {
+  color: #f00;
+}
+/* line 152, ../../app/assets/stylesheets/custom.css.scss */
+#error_explanation ul {
+  list-style: none;
+  margin: 0 0 18px 0;
+}
+
 /* miscellaneous */
-/* line 112, ../../app/assets/stylesheets/custom.css.scss */
+/* line 165, ../../app/assets/stylesheets/custom.css.scss */
 .debug_dump {
   clear: both;
   float: left;
